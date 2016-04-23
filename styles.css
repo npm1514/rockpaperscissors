@@ -1,0 +1,65 @@
+body {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #8d8d8d;
+  font-family: 'Oswald', sans-serif;
+}
+
+.logo {
+  width: 300px;
+  padding: 20px;
+}
+
+.title {
+  border-top: 1px solid #000;
+  padding: 10px;
+  width: 1100px;
+  margin: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.player1, .player2 {
+  float: left;
+  width: 340px;
+  height: 500px;
+  border: 1px solid #000;
+  margin: 2px;
+}
+
+.verdict {
+  float: left;
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+  margin: 2px;
+}
+
+.decision {
+  height: 250px;
+  margin: 10px;
+}
+
+.result {
+  width: 450px;
+  height: 250px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.playbutton {
+  margin: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+}

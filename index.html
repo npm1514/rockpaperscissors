@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="RPS">
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  </head>
+  <body ng-controller="RPSCtrl">
+    <header>
+      <img class="logo" src="./images/logo.jpg" alt="" />
+      <h1 class="title">Rock Paper Scissors Championship</h1>
+      <button class="playbutton" type="button" name="button" ng-click="player1 = options[0]; randomizecpu(options[0])">Rock</button>
+      <button class="playbutton" type="button" name="button" ng-click="player1 = options[1]; randomizecpu(options[1])">Paper</button>
+      <button class="playbutton" type="button" name="button" ng-click="player1 = options[2]; randomizecpu(options[2])">Scissors</button>
+    </header>
+    <div class="container">
+      <div class="player1">
+        <h2>Player 1</h2>
+        <img class="decision" src={{player1.image}} alt="" />
+        <h2>{{player1.selection}}</h2>
+        <h2>Wins: {{p1wins}}</h2>
+      </div>
+      <div class="verdict">
+        <h2>Verdict</h2>
+        <img class="result" src={{verdict.image}} alt="" />
+        <h2>{{verdict.result}}</h2>
+        <h2>{{message}}</h2>
+      </div>
+      <div class="player2">
+        <h2>Player 2</h2>
+        <img class="decision" src={{player2.image}} alt="" />
+        <h2>{{player2.selection}}</h2>
+        <h2>Wins: {{p2wins}}</h2>
+      </div>
+      <div class="playagain">
+        <button class="playbutton" type="button" name="button" ng-click="randomize()">Play Random</button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <script src="./app.js"></script>
+    <script src="./RPSCtrl.js"></script>
+  </body>
+</html>
